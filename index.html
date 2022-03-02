@@ -18,12 +18,13 @@
     <!-- funciones propias -->
     <script src="funciones.js" defer></script>
   </head>
+
   <body>
     <main class="main">
       <!-- header -->
       <header class="header">
         <div class="logo">
-          <img src="assets/img/logo.png" alt="Logo" />
+          <img src="assets/img/logo-horizontal.svg" alt="Logo" />
         </div>
       </header>
 
@@ -45,7 +46,10 @@
           </div>
 
           <div class="noticia__img">
-            <img src="assets/img/moto.jpg" alt="Imagen de la noticia" />
+            <img
+              src="assets/img/lorenzo-gb35a70c38_1920.jpg"
+              alt="Imagen de la noticia"
+            />
           </div>
 
           <div class="noticia__cuerpo">
@@ -79,7 +83,50 @@
             <h2>Galería de imágenes</h2>
           </div>
 
-          <div class="galeria__cuerpo"></div>
+          <div class="galeria__cuerpo">
+            <img
+              src="assets/img/lorenzo-gb35a70c38_1920.jpg"
+              alt="Img"
+              class="uno"
+            />
+            <img
+              src="assets/img/motorbike-gde0fb44c5_1920.jpg"
+              alt="Img"
+              class="dos"
+            />
+            <img src="assets/img/unnamed.jpg" alt="Img" class="tres" />
+            <img
+              src="assets/img/motorbike-gfaad1ed84_1920.jpg"
+              alt="Img"
+              class="cuatro"
+            />
+            <img
+              src="assets/img/motorcycle-g7d1d10f30_1920.jpg"
+              alt="Img"
+              class="cinco"
+            />
+          </div>
+
+          <!-- imágenes en pantalla completa -->
+          <div class="galeria__completa">
+            <div class="contenedor-interno">
+              <img src="assets/img/moto.jpg" alt="Img" class="img-activa" />
+              <button type="button" class="cerrar">
+                <i class="fa-solid fa-circle-xmark"></i>
+              </button>
+              <button type="button" class="derecha">
+                <i class="fa-solid fa-circle-right"></i>
+              </button>
+              <button type="button" class="izquierda">
+                <i class="fa-solid fa-circle-left"></i>
+              </button>
+              <div class="indice">
+                <span class="indice-imagen"></span>
+                <span class="texto">de</span>
+                <span class="total"></span>
+              </div>
+            </div>
+          </div>
 
           <div class="galeria__boton">
             <a href="#">Ver galería completa</a>
@@ -102,23 +149,26 @@
                 </div>
 
                 <div class="declaracion_contenido__texto">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Minima sed vel eaque ullam obcaecati, totam quibusdam
-                  blanditiis id aliquam esse temporibus beatae quae aut quis
-                  consequatur officia laborum animi quos. Lorem ipsum dolor sit
-                  amet consectetur adipisicing elit. Architecto aspernatur nihil
-                  animi esse quas, a dolorem sunt quibusdam! Harum quisquam
-                  perferendis natus quo cumque excepturi accusamus similique
-                  deserunt. Voluptate, maiores!
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Minima sed vel eaque ullam obcaecati, totam quibusdam
+                    blanditiis id aliquam esse temporibus beatae quae aut quis
+                    consequatur officia laborum animi quos. Lorem ipsum dolor
+                    sit amet consectetur adipisicing elit. Architecto aspernatur
+                    nihil animi esse quas, a dolorem sunt quibusdam! Harum
+                    quisquam perferendis natus quo cumque excepturi accusamus
+                    similique deserunt. Voluptate, maiores!
+                  </p>
                 </div>
               </div>
 
               <div class="declaracion_img">
                 <img src="assets/img/piloto1.jpg" alt="Piloto 1" />
+                <a href="#">Ver perfil</a>
               </div>
             </div>
 
-            <div class="segunda_declaracion">
+            <!-- <div class="segunda_declaracion">
               <div class="declaracion_contenido">
                 <div class="declaracion_contenido__cabecera">
                   <h3>Álex Márquez</h3>
@@ -126,21 +176,23 @@
                 </div>
 
                 <div class="declaracion_contenido__texto">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Minima sed vel eaque ullam obcaecati, totam quibusdam
-                  blanditiis id aliquam esse temporibus beatae quae aut quis
-                  consequatur officia laborum animi quos. Lorem ipsum dolor sit
-                  amet consectetur adipisicing elit. Architecto aspernatur nihil
-                  animi esse quas, a dolorem sunt quibusdam! Harum quisquam
-                  perferendis natus quo cumque excepturi accusamus similique
-                  deserunt. Voluptate, maiores!
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Minima sed vel eaque ullam obcaecati, totam quibusdam
+                    blanditiis id aliquam esse temporibus beatae quae aut quis
+                    consequatur officia laborum animi quos. Lorem ipsum dolor
+                    sit amet consectetur adipisicing elit. Architecto aspernatur
+                    nihil animi esse quas, a dolorem sunt quibusdam! Harum
+                    quisquam perferendis natus quo cumque excepturi accusamus
+                    similique deserunt. Voluptate, maiores!
+                  </p>
                 </div>
               </div>
 
               <div class="declaracion_img">
                 <img src="assets/img/piloto1.jpg" alt="Piloto 1" />
               </div>
-            </div>
+            </div> -->
           </div>
         </article>
 
@@ -239,6 +291,10 @@
             </tr>
           </tbody>
         </table>
+
+        <div class="baja">
+          <a href="#">Darse de baja</a>
+        </div>
       </footer>
     </main>
   </body>

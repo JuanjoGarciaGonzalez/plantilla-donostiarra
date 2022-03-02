@@ -1,0 +1,24 @@
+Pasos a seguir para rellenar contenido o cambiar colores en la plantilla
+
+COLORES
+Para cambiar los colores de la plantilla ve al archivo estilos.css y en el selector :root cambiar el código del color.
+Hay un color  principal(para la cabecera, iconos etc), otro secundario(para botones y detalles), textos y fondo de las secciones intercaladas
+
+LOGO
+En el header, cambiar el atributo src del elemento IMG por la ruta del archivo.
+
+NOTICIA
+Titulo: etiqueta H1 en el elemento con nombre 'noticia'
+Descripción: etiqueta P debajo del H1
+Imagen: cambiar el atributo src en el elemento noticia__imagen con la ruta de la imagen
+Cuerpo: las etiquetas P en el elemento noticia__cuerpo
+
+GALERÍA
+Cambiar en galeria__cuerpo el atributo src de las imágenes con las rutas correspondientes
+
+DECLARACIONES
+Nombre: etiqueta H3 del elemento declaracion_contenido__cabecera
+Descripción: etiqueta SPAN debajo del H3
+Cuerpo: etiqueta P en el elemento declaracion_contenido__texto
+
+
