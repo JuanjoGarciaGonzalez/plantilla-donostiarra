@@ -25,7 +25,7 @@ imagenes.forEach(function(imagen) {
 })
 
 // cerrar galeria en pantalla completa
-const cierraCompleta = function (event) {
+const cierraCompleta = function () {
     galeria_completa.style.display = "none";
 }
 
@@ -70,4 +70,25 @@ function añadirActiva() {
     });
 
     this.classList.add("activa")
+}
+
+// scale imagen album
+const boton_album = document.querySelectorAll(".album__texto")
+const img_album = document.querySelectorAll(".album img")
+
+boton_album.forEach(element => {
+    element.addEventListener("mouseover", scale)
+    element.addEventListener("mouseout", normal)
+});
+
+function scale(event) {
+    indice_album = event.target.id
+    img_album[indice_album].style.transform = "scale(1.2)"
+    img_album[indice_album].style.transition = "all 0.2s ease"
+}
+
+function normal(event) {
+    indice_album = event.target.id
+    img_album[indice_album].style.transform = "scale(1)"
+    img_album[indice_album].style.transition = "all 0.2s ease"
 }

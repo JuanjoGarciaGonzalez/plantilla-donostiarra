@@ -39,10 +39,13 @@ html {
   background-color: var(--secundario);
 }
 
+.idioma i {
+  color: white;
+}
+
 .idioma a {
   text-decoration: none;
   color: white;
-  font-weight: bold;
 }
 
 .idioma a:hover {
@@ -145,25 +148,6 @@ html {
   gap: 2rem;
 }
 
-/* .galeria__cuerpo__img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-
-.galeria__cuerpo__img img {
-  max-height: 100%;
-  object-fit: cover;
-  transition: all 0.2s ease;
-}
-
-.galeria__cuerpo__img img:hover {
-  transform: scale(1.2);
-  filter: brightness(0.4);
-  transition: all 0.2s ease;
-} */
-
 .album {
   flex-basis: 50%;
   display: flex;
@@ -172,16 +156,21 @@ html {
   overflow: hidden;
   position: relative;
 }
+
+.album span {
+  font-size: 2rem;
+  color: var(--principal);
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 1;
+  font-style: italic;
+}
 .album img {
   max-height: 100%;
   object-fit: cover;
   transition: all 0.2s ease;
-  filter: brightness(0.4);
-}
-
-.album img:hover {
-  transform: scale(1.2);
-  transition: all 0.2s ease;
+  filter: brightness(0.2);
 }
 
 .album__texto {
@@ -194,11 +183,13 @@ html {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-}
-
-.album__texto span {
-  color: white;
-  font-weight: bold;
+  font-size: 1.5rem;
+  font-style: italic;
+  line-height: 1;
+  -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
 }
 
 .uno {
@@ -344,7 +335,6 @@ button i {
   color: white;
   text-decoration: none;
   font-size: 1rem;
-  font-weight: bold;
 }
 
 .galeria__boton a:hover {
@@ -461,6 +451,11 @@ button i {
 
 .clasificacion__cuerpo {
   margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
 }
 
 .clasificacion__cuerpo table {
@@ -500,7 +495,6 @@ button i {
   color: white;
   text-decoration: none;
   font-size: 1rem;
-  font-weight: bold;
 }
 
 .clasificacion__boton a:hover {
@@ -557,7 +551,6 @@ button i {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: bold;
 }
 
 .baja a:hover {
