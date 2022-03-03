@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Maqueta - Xabi Zurutuza</title>
+    <title>Plantilla - Donostiarra</title>
     <!-- cdn font awesome -->
     <link
       rel="stylesheet"
@@ -21,10 +21,16 @@
 
   <body>
     <main class="main">
+      <!-- idioma -->
+      <div class="idioma">
+        <a href="#" class="activa">Euskara</a>
+        <a href="#">Gaztelania</a>
+      </div>
+
       <!-- header -->
       <header class="header">
         <div class="logo">
-          <img src="assets/img/logo-horizontal.svg" alt="Logo" />
+          <img src="assets/img/logo-kaiarriba-donostiarra-1.png" alt="Logo" />
         </div>
       </header>
 
@@ -46,10 +52,7 @@
           </div>
 
           <div class="noticia__img">
-            <img
-              src="assets/img/lorenzo-gb35a70c38_1920.jpg"
-              alt="Imagen de la noticia"
-            />
+            <img src="assets/img/remeras.jpg" alt="Imagen de la noticia" />
           </div>
 
           <div class="noticia__cuerpo">
@@ -84,40 +87,42 @@
           </div>
 
           <div class="galeria__cuerpo">
-            <img
-              src="assets/img/lorenzo-gb35a70c38_1920.jpg"
-              alt="Img"
-              class="uno"
-            />
-            <img
-              src="assets/img/motorbike-gde0fb44c5_1920.jpg"
-              alt="Img"
-              class="dos"
-            />
-            <img src="assets/img/unnamed.jpg" alt="Img" class="tres" />
-            <img
-              src="assets/img/motorbike-gfaad1ed84_1920.jpg"
-              alt="Img"
-              class="cuatro"
-            />
-            <img
-              src="assets/img/motorcycle-g7d1d10f30_1920.jpg"
-              alt="Img"
-              class="cinco"
-            />
+            <div class="album">
+              <img
+                src="assets/img/remeras.jpg"
+                alt="Img"
+                title="Pantalla completa"
+              />
+
+              <div class="album__texto">
+                <span>Ver álbum<br />5 imágenes</span>
+              </div>
+            </div>
+
+            <div class="album">
+              <img
+                src="assets/img/remeras.jpg"
+                alt="Img"
+                title="Pantalla completa"
+              />
+
+              <div class="album__texto">
+                <span>Ver álbum<br />5 imágenes</span>
+              </div>
+            </div>
           </div>
 
           <!-- imágenes en pantalla completa -->
           <div class="galeria__completa">
             <div class="contenedor-interno">
-              <img src="assets/img/moto.jpg" alt="Img" class="img-activa" />
-              <button type="button" class="cerrar">
+              <img src="" alt="Img" class="img-activa" />
+              <button type="button" class="cerrar" title="Cerrar galería">
                 <i class="fa-solid fa-circle-xmark"></i>
               </button>
-              <button type="button" class="derecha">
+              <button type="button" class="derecha" title="Avanzar galería">
                 <i class="fa-solid fa-circle-right"></i>
               </button>
-              <button type="button" class="izquierda">
+              <button type="button" class="izquierda" title="Retrasar galería">
                 <i class="fa-solid fa-circle-left"></i>
               </button>
               <div class="indice">
@@ -168,7 +173,7 @@
               </div>
             </div>
 
-            <!-- <div class="segunda_declaracion">
+            <div class="segunda_declaracion">
               <div class="declaracion_contenido">
                 <div class="declaracion_contenido__cabecera">
                   <h3>Álex Márquez</h3>
@@ -192,7 +197,7 @@
               <div class="declaracion_img">
                 <img src="assets/img/piloto1.jpg" alt="Piloto 1" />
               </div>
-            </div> -->
+            </div>
           </div>
         </article>
 
@@ -200,7 +205,10 @@
         <article class="clasificacion">
           <div class="clasificacion__cabecera">
             <i class="fa-solid fa-trophy"></i>
-            <h2>Clasificación - Dia 2</h2>
+            <div class="clasificacion__cabecera__texto">
+              <h2>Clasificación</h2>
+              <span>Nombre de la regata</span>
+            </div>
           </div>
 
           <div class="clasificacion__cuerpo">
@@ -262,6 +270,16 @@
             <a href="#">Ver clasificación</a>
           </div>
         </article>
+      </div>
+
+      <!-- rrss -->
+      <div class="rrss">
+        <a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" title="Facebook">
+          <i class="fa-brands fa-facebook-f"></i
+        ></a>
+        <a href="#" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" title="TikTok"><i class="fa-brands fa-youtube"></i></a>
       </div>
 
       <!-- footer -->

@@ -5,7 +5,7 @@ Para cambiar los colores de la plantilla ve al archivo estilos.css y en el selec
 Hay un color  principal(para la cabecera, iconos etc), otro secundario(para botones y detalles), textos y fondo de las secciones intercaladas
 
 LOGO
-En el header, cambiar el atributo src del elemento IMG por la ruta del archivo.
+En el header, cambiar el atributo src del elemento IMG por la ruta del archivo
 
 NOTICIA
 Titulo: etiqueta H1 en el elemento con nombre 'noticia'
@@ -14,11 +14,21 @@ Imagen: cambiar el atributo src en el elemento noticia__imagen con la ruta de la
 Cuerpo: las etiquetas P en el elemento noticia__cuerpo
 
 GALERÍA
-Cambiar en galeria__cuerpo el atributo src de las imágenes con las rutas correspondientes
+Cambiar en galeria__cuerpo el atributo src de las imágenes con las rutas correspondientes (deben estar en la carpeta assets/img)
+Sólo se pueden poner 5 imágenes en esta plantilla (se puede modificar la plantilla para poner más)
 
 DECLARACIONES
 Nombre: etiqueta H3 del elemento declaracion_contenido__cabecera
 Descripción: etiqueta SPAN debajo del H3
 Cuerpo: etiqueta P en el elemento declaracion_contenido__texto
+
+CLASIFICACIÓN
+Para cambiar el contenido de la tabla de clasificación, tienes que modificar las etiquetas TD del elemento clasificacion__cuerpo
+
+CONTACTO
+Lo mismo que la clasificación, en este caso los TH son los títulos en negrita
+
+ENLACES
+Para cambiar los enlaces de los botones, modificar el atributo HREF de los elementos
 
 

@@ -55,3 +55,19 @@ function atrasar() {
 }
 
 izquierda.addEventListener("click", atrasar)
+
+// cambiar activa del menu de idioma
+const menu_items = document.querySelectorAll(".idioma a")
+
+menu_items.forEach(link => {
+    link.addEventListener("click", añadirActiva)
+});
+
+
+function añadirActiva() {
+    menu_items.forEach(link => {
+        link.classList.remove("activa")
+    });
+
+    this.classList.add("activa")
+}
