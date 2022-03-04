@@ -17,6 +17,15 @@
     <link rel="stylesheet" href="estilos.css" />
     <!-- funciones propias -->
     <script src="funciones.js" defer></script>
+    <!-- jquery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- jquery translate -->
+    <script src="jqueryTranslator.js"></script>
   </head>
 
   <body>
@@ -24,8 +33,8 @@
       <!-- idioma -->
       <div class="idioma">
         <i class="fa-solid fa-globe"></i>
-        <a href="#" class="activa">Euskara</a>
-        <a href="#">Gaztelania</a>
+        <button class="activa euskera" data-translate="idiomaEuskera"></button>
+        <button class="espanol" data-translate="idiomaEspañol"></button>
       </div>
 
       <!-- header -->
@@ -40,16 +49,8 @@
         <!-- noticia -->
         <article class="noticia">
           <div class="noticia__cabecera">
-            <h1>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Dignissimos, quas!
-            </h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-              rerum maiores obcaecati temporibus esse, amet ratione in nobis
-              exercitationem sunt, atque mollitia ducimus excepturi reiciendis
-              nemo aut explicabo ullam repudiandae?
-            </p>
+            <h1 data-translate="tituloNoticia"></h1>
+            <p data-translate="descripcionNoticia"></p>
           </div>
 
           <div class="noticia__img">
@@ -57,26 +58,9 @@
           </div>
 
           <div class="noticia__cuerpo">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Aspernatur voluptatum eum consectetur ullam numquam, sapiente sed
-              consequuntur et voluptatibus perferendis mollitia, aperiam maiores
-              eveniet quos vel ut atque commodi exercitationem! Corrupti vero
-              fugiat ullam dignissimos nesciunt, sequi voluptate. Placeat ex
-              velit ipsa temporibus sed, optio aspernatur sunt quis fugiat
-              commodi qui culpa laborum mollitia minus quod. Quia ducimus
-              nesciunt aliquam!
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-              repellendus minus hic ullam quisquam optio cumque quos, ab,
-              aliquid deleniti dolore dicta architecto praesentium corrupti quod
-              molestias beatae eligendi obcaecati!
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum,
-              mollitia.
-            </p>
+            <p data-translate="noticia_parrafo1"></p>
+            <p data-translate="noticia_parrafo2"></p>
+            <p data-translate="noticia_parrafo3"></p>
           </div>
         </article>
 
@@ -84,12 +68,11 @@
         <article class="galeria">
           <div class="galeria__cabecera">
             <i class="fa-solid fa-images"></i>
-            <h2>Galería de imágenes</h2>
+            <h2 data-translate="galeria_titulo"></h2>
           </div>
 
           <div class="galeria__cuerpo">
-
-            <div class="album">
+            <div class="album" id="primero">
               <span>Femenino</span>
               <img
                 src="assets/img/remeras.jpg"
@@ -97,12 +80,16 @@
                 title="Pantalla completa"
               />
 
-              <div class="album__texto" id="0">
-                Ver álbum
-              </div>
+              <img
+                src="assets/img/logo-kaiarriba-donostiarra-1.png"
+                alt="Img"
+                title="Pantalla completa"
+              />
+
+              <div class="album__texto" id="0">Ver álbum</div>
             </div>
 
-            <div class="album">
+            <div class="album" id="segundo">
               <span>Masculino</span>
               <img
                 src="assets/img/remeras.jpg"
@@ -110,9 +97,7 @@
                 title="Pantalla completa"
               />
 
-              <div class="album__texto" id="1">
-                Ver álbum
-              </div>
+              <div class="album__texto" id="1">Ver álbum</div>
             </div>
           </div>
 
@@ -172,7 +157,7 @@
               </div>
 
               <div class="declaracion_img">
-                <img src="assets/img/piloto1.jpg" alt="Piloto 1" />
+                <img src="" alt="Piloto 1" />
                 <a href="#">Ver perfil</a>
               </div>
             </div>
@@ -199,7 +184,7 @@
               </div>
 
               <div class="declaracion_img">
-                <img src="assets/img/piloto1.jpg" alt="Piloto 1" />
+                <img src="" alt="Piloto 1" />
                 <a href="#">Ver perfil</a>
               </div>
             </div>
@@ -217,6 +202,7 @@
           </div>
 
           <div class="clasificacion__cuerpo">
+            <h3>Femenino</h3>
             <table>
               <tbody>
                 <tr class="arriba">
@@ -263,6 +249,7 @@
               </tbody>
             </table>
 
+            <h3>Masculino</h3>
             <table>
               <tbody>
                 <tr class="arriba">

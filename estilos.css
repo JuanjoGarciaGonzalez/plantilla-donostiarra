@@ -43,12 +43,14 @@ html {
   color: white;
 }
 
-.idioma a {
-  text-decoration: none;
+.idioma button {
   color: white;
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
 }
 
-.idioma a:hover {
+.idioma button:hover {
   color: var(--principal);
   transition: all 0.2s ease;
 }
@@ -187,9 +189,9 @@ html {
   font-style: italic;
   line-height: 1;
   -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none; 
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .uno {
@@ -456,6 +458,12 @@ button i {
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
+}
+
+.clasificacion__cuerpo h3 {
+  text-align: start;
+  font-size: 2rem;
+  color: var(--principal);
 }
 
 .clasificacion__cuerpo table {
