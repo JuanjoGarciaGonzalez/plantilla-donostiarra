@@ -169,10 +169,15 @@ html {
   font-style: italic;
 }
 .album img {
+  display: none;
   max-height: 100%;
   object-fit: cover;
   transition: all 0.2s ease;
   filter: brightness(0.2);
+}
+
+.album img:first-of-type {
+  display: block;
 }
 
 .album__texto {
@@ -601,15 +606,13 @@ button i {
   }
 
   .galeria__cuerpo {
-    height: 100vh;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(5, auto);
-    grid-template-areas:
-      "uno"
-      "dos"
-      "tres"
-      "cuatro"
-      "cinco";
+    flex-direction: column;
+  }
+
+  .album span {
+    font-size: 2rem;
+    top: .5rem;
+    left: .5rem;
   }
 
   .cerrar {

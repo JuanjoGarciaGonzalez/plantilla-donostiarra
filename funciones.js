@@ -10,16 +10,17 @@ const contador_indice = document.querySelector(".indice-imagen")
 const contador_total = document.querySelector(".total")
 
 let indice_img = 0
+let id_album
 
 // abrir galeria en pantalla completa
 function abreCompleta(event) {
-    var id_album = event.target.id
-    if(id_album == 1) {
+    id_album = event.target.id
+    if(id_album == 0) {
         img_activa.src = imagenes_uno[0].src
         contador_total.innerHTML = imagenes_uno.length
-    }else {
+    }else if(id_album == 1){
         img_activa.src = imagenes_dos[0].src
-        contador_total.innerHTML = imagenes_uno.length
+        contador_total.innerHTML = imagenes_dos.length
     }
     
     galeria_completa.style.display = "flex";
@@ -28,9 +29,11 @@ function abreCompleta(event) {
 }
 
 const album = document.querySelectorAll(".album")
+
 album.forEach(function(element) {
     element.addEventListener("click", abreCompleta)
 })
+
 
 // cerrar galeria en pantalla completa
 const cierraCompleta = function () {
@@ -42,27 +45,49 @@ cerrar.addEventListener("click", cierraCompleta)
 
 // adelantar imagen
 function adelantar() {
-    if(indice_img === imagenes_uno.length) {
-        indice_img = 0
+    if(id_album == 0) {
+        if(indice_img === imagenes_uno.length) {
+            indice_img = 0
+        }
+    
+        img_activa.src = imagenes_uno[indice_img].src
+        indice_img++
+        contador_indice.innerHTML = indice_img
+    }else if(id_album == 1) {
+        if(indice_img === imagenes_dos.length) {
+            indice_img = 0
+        }
+    
+        img_activa.src = imagenes_dos[indice_img].src
+        indice_img++
+        contador_indice.innerHTML = indice_img
     }
 
-    img_activa.src = imagenes_uno[indice_img].src
-    indice_img++
-    contador_indice.innerHTML = indice_img
+
 }
 
 derecha.addEventListener("click", adelantar)
 
 // atrasar imagen
 function atrasar() {
-
-    if(indice_img === 0) {
-        indice_img = imagenes_uno.length
+    if(id_album == 0) {
+        if(indice_img === 0) {
+            indice_img = imagenes_uno.length
+        }
+    
+        img_activa.src = imagenes_uno[indice_img - 1].src
+        indice_img--
+        contador_indice.innerHTML = indice_img + 1
+    }else if(id_album == 1) {
+        if(indice_img === 0) {
+            indice_img = imagenes_dos.length
+        }
+    
+        img_activa.src = imagenes_dos[indice_img - 1].src
+        indice_img--
+        contador_indice.innerHTML = indice_img + 1
     }
 
-    img_activa.src = imagenes_uno[indice_img - 1].src
-    indice_img--
-    contador_indice.innerHTML = indice_img + 1
 
 }
 
@@ -86,7 +111,6 @@ function añadirActiva() {
 
 // scale imagen album
 const boton_album = document.querySelectorAll(".album__texto")
-const img_album = document.querySelectorAll(".album img")
 
 boton_album.forEach(element => {
     element.addEventListener("mouseover", scale)
@@ -95,14 +119,25 @@ boton_album.forEach(element => {
 
 function scale(event) {
     indice_album = event.target.id
-    img_album[indice_album].style.transform = "scale(1.2)"
-    img_album[indice_album].style.transition = "all 0.2s ease"
+    if(indice_album == 0) {
+        imagenes_uno[0].style.transform = "scale(1.2)"
+        imagenes_uno[0].style.transition = "all 0.2s ease"
+    }else {
+        imagenes_dos[0].style.transform = "scale(1.2)"
+        imagenes_dos[0].style.transition = "all 0.2s ease"
+    }
+
 }
 
 function normal(event) {
     indice_album = event.target.id
-    img_album[indice_album].style.transform = "scale(1)"
-    img_album[indice_album].style.transition = "all 0.2s ease"
+    if(indice_album == 0) {
+        imagenes_uno[0].style.transform = "scale(1)"
+        imagenes_uno[0].style.transition = "all 0.2s ease"
+    }else {
+        imagenes_dos[0].style.transform = "scale(1)"
+        imagenes_dos[0].style.transition = "all 0.2s ease"
+    }
 }
 
 // traduccion
