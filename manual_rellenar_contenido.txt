@@ -1,4 +1,4 @@
-Pasos a seguir para rellenar contenido o cambiar colores en la plantilla
+Pasos a seguir para rellenar contenido o cambiar colores en la plantilla (Para ver los cambios hay que ejecutar la plantilla en un servidor web)
 
 COLORES
 Para cambiar los colores de la plantilla ve al archivo estilos.css y en el selector :root cambiar el código del color.
@@ -7,26 +7,16 @@ Hay un color  principal(para la cabecera, iconos etc), otro secundario(para boto
 LOGO
 En el header, cambiar el atributo src del elemento IMG por la ruta del archivo
 
-NOTICIA
-Titulo: etiqueta H1 en el elemento con nombre 'noticia'
-Descripción: etiqueta P debajo del H1
-Imagen: cambiar el atributo src en el elemento noticia__imagen con la ruta de la imagen
-Cuerpo: las etiquetas P en el elemento noticia__cuerpo
+CONTENIDO
+Para cambiar el contenido de la plantilla hay que ir a los archivos index_eus-es.json y index-es.json(en Euskera y Castellano respectivamente) en la carpeta json, e ir cambiando los contenidos en su etiqueta correspondiente. 
+Las etiquetas son bastante descriptivas pero si no sabes qué es una etiqueta tienes que ir al index.html y buscar el elemento con el data-translate correspondiente a la etiqueta(o ver que se ha cambiado en el navegador y ya sabrás que és).
 
 GALERÍA
-Cambiar en galeria__cuerpo el atributo src de las imágenes con las rutas correspondientes (deben estar en la carpeta assets/img)
-Sólo se pueden poner 5 imágenes en esta plantilla (se puede modificar la plantilla para poner más)
-
-DECLARACIONES
-Nombre: etiqueta H3 del elemento declaracion_contenido__cabecera
-Descripción: etiqueta SPAN debajo del H3
-Cuerpo: etiqueta P en el elemento declaracion_contenido__texto
+Cambiar en galeria__cuerpo el atributo src de las imágenes con las rutas correspondientes (deben estar en la carpeta assets/img).
+En la plantilla hay 2 etiquetas img, si quieres añadir más tienes que copiar y pegar toda la etiqueta una justo debajo muy importante. Y cambiarle el src.
 
 CLASIFICACIÓN
-Para cambiar el contenido de la tabla de clasificación, tienes que modificar las etiquetas TD del elemento clasificacion__cuerpo
-
-CONTACTO
-Lo mismo que la clasificación, en este caso los TH son los títulos en negrita
+Para cambiar el contenido de la tabla de clasificación, tienes que modificar las etiquetas td del elemento clasificacion__cuerpo
 
 ENLACES
 Para cambiar los enlaces de los botones, modificar el atributo HREF de los elementos

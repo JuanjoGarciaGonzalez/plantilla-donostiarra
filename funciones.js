@@ -24,8 +24,8 @@ function abreCompleta(event) {
     }
     
     galeria_completa.style.display = "flex";
-    indice_img = 1
-    contador_indice.innerHTML = indice_img
+    indice_img = 0
+    contador_indice.innerHTML = indice_img + 1
 }
 
 const album = document.querySelectorAll(".album")
@@ -46,22 +46,19 @@ cerrar.addEventListener("click", cierraCompleta)
 // adelantar imagen
 function adelantar() {
     if(id_album == 0) {
-        console.log(imagenes_uno.length)
-        if(indice_img == imagenes_uno.length) {
-            indice_img = 0
+        if(indice_img === imagenes_uno.length -1) {
+            indice_img = -1
         }
-
-        img_activa.src = imagenes_uno[indice_img].src
+        img_activa.src = imagenes_uno[indice_img + 1].src
         indice_img++
-        contador_indice.innerHTML = indice_img
+        contador_indice.innerHTML = indice_img + 1
     }else if(id_album == 1) {
-        if(indice_img === imagenes_dos.length) {
-            indice_img = 0
+        if(indice_img === imagenes_dos.length -1) {
+            indice_img = -1
         }
-    
-        img_activa.src = imagenes_dos[indice_img].src
+        img_activa.src = imagenes_dos[indice_img + 1].src
         indice_img++
-        contador_indice.innerHTML = indice_img
+        contador_indice.innerHTML = indice_img + 1
     }
 
 
@@ -72,30 +69,25 @@ derecha.addEventListener("click", adelantar)
 // atrasar imagen
 function atrasar() {
     if(id_album == 0) {
-        console.log(indice_img)
+
         if(indice_img == 0) {
             indice_img = imagenes_uno.length
-            img_activa.src = imagenes_uno[indice_img - 1].src
-            indice_img--
-            contador_indice.innerHTML = indice_img + 1
-        }else {
-            img_activa.src = imagenes_uno[indice_img - 1].src
-            indice_img--
-            contador_indice.innerHTML = indice_img + 1
         }
+        img_activa.src = imagenes_uno[indice_img - 1].src
+        indice_img--
+        contador_indice.innerHTML = indice_img + 1
      
     }else if(id_album == 1) {
         if(indice_img == 0) {
             indice_img = imagenes_dos.length
-            img_activa.src = imagenes_uno[indice_img - 1].src
-            indice_img--
-            contador_indice.innerHTML = indice_img + 1
-        }else {
-            img_activa.src = imagenes_dos[indice_img - 1].src
-            indice_img--
-            contador_indice.innerHTML = indice_img + 1
         }
+        img_activa.src = imagenes_dos[indice_img - 1].src
+        indice_img--
+        contador_indice.innerHTML = indice_img + 1
     }
+
+
+
 
 
 }
