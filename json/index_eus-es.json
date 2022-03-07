@@ -8,5 +8,29 @@
     "noticia_parrafo2": "Párrafo 2 en euskera.",
     "noticia_parrafo3": "Párrafo 3 en euskera.",
 
-    "galeria_titulo": "Irudi galeria"
+    "galeria_titulo": "Irudi galeria",
+    "titulo_album_1": "Femeninoa",
+    "titulo_album_2": "Gizonezkoa",
+    "boton_album": "Ikus albuma",
+    "boton_galeria": "Ikusi guztiak",
+
+    "titulo_declaraciones": "Adierazpenak",
+    "declaracion_1_nombre": "Lorem",
+    "declaracion_2_nombre": "Lorem",
+    "declaracion_1_descripcion": "lorem ipsum dolor",
+    "declaracion_2_descripcion": "lorem ipsum dolor",
+    "declaracion_1_parrafo": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "declaracion_2_parrafo": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "boton_perfil": "Profila ikusi",
+
+    "titulo_clasificacion": "Sailkapena",
+    "nombre_regata": "Lasterketaren izena",
+    "titulo_clasificacion_1": "Femeninoa",
+    "titulo_clasificacion_2": "Gizonezkoa",
+    "boton_clasificacion": "Sailkapena ikusi",
+
+    "copy": "Copyright © 2022 Donostiarra | Eskubide guztiak erreserbatuak.",
+
+    "baja": "Harpidetza utzi"
+
 }

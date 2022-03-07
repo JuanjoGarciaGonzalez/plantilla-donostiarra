@@ -73,7 +73,7 @@
 
           <div class="galeria__cuerpo">
             <div class="album" id="primero">
-              <span>Femenino</span>
+              <span data-translate="titulo_album_1"></span>
               <img
                 src="assets/img/femenino1.jpg"
                 alt="Img"
@@ -86,11 +86,15 @@
                 title="Pantalla completa"
               />
 
-              <div class="album__texto" id="0">Ver álbum</div>
+              <div
+                class="album__texto"
+                id="0"
+                data-translate="boton_album"
+              ></div>
             </div>
 
             <div class="album" id="segundo">
-              <span>Masculino</span>
+              <span data-translate="titulo_album_2"></span>
               <img
                 src="assets/img/masculino1.jpg"
                 alt="Img"
@@ -103,7 +107,11 @@
                 title="Pantalla completa"
               />
 
-              <div class="album__texto" id="1">Ver álbum</div>
+              <div
+                class="album__texto"
+                id="1"
+                data-translate="boton_album"
+              ></div>
             </div>
           </div>
 
@@ -122,14 +130,14 @@
               </button>
               <div class="indice">
                 <span class="indice-imagen"></span>
-                <span class="texto">de</span>
+                <span class="texto"> / </span>
                 <span class="total"></span>
               </div>
             </div>
           </div>
 
           <div class="galeria__boton">
-            <a href="#">Ver galería completa</a>
+            <a href="#" data-translate="boton_galeria"></a>
           </div>
         </article>
 
@@ -137,61 +145,49 @@
         <article class="declaraciones">
           <div class="declaraciones__cabecera">
             <i class="fa-solid fa-comments"></i>
-            <h2>Declaraciones</h2>
+            <h2 data-translate="titulo_declaraciones"></h2>
           </div>
 
           <div class="declaraciones__cuerpo">
             <div class="primera_declaracion">
               <div class="declaracion_contenido">
                 <div class="declaracion_contenido__cabecera">
-                  <h3>Álex Márquez</h3>
-                  <span>Lorem ipsum dolor sit</span>
+                  <h3 data-translate="declaracion_1_nombre"></h3>
+                  <span data-translate="declaracion_2_descripcion"></span>
                 </div>
 
                 <div class="declaracion_contenido__texto">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Minima sed vel eaque ullam obcaecati, totam quibusdam
-                    blanditiis id aliquam esse temporibus beatae quae aut quis
-                    consequatur officia laborum animi quos. Lorem ipsum dolor
-                    sit amet consectetur adipisicing elit. Architecto aspernatur
-                    nihil animi esse quas, a dolorem sunt quibusdam! Harum
-                    quisquam perferendis natus quo cumque excepturi accusamus
-                    similique deserunt. Voluptate, maiores!
-                  </p>
+                  <p data-translate="declaracion_1_parrafo"></p>
                 </div>
               </div>
 
               <div class="declaracion_img">
-                <img src="" alt="Piloto 1" />
-                <a href="#">Ver perfil</a>
+                <img
+                  src="assets/img/declaracion1.jpg"
+                  alt="Imagen declaración 1"
+                />
+                <a href="#" data-translate="boton_perfil"></a>
               </div>
             </div>
 
             <div class="segunda_declaracion">
               <div class="declaracion_contenido">
                 <div class="declaracion_contenido__cabecera">
-                  <h3>Álex Márquez</h3>
-                  <span>Lorem ipsum dolor sit</span>
+                  <h3 data-translate="declaracion_2_nombre"></h3>
+                  <span data-translate="declaracion_2_descripcion"></span>
                 </div>
 
                 <div class="declaracion_contenido__texto">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Minima sed vel eaque ullam obcaecati, totam quibusdam
-                    blanditiis id aliquam esse temporibus beatae quae aut quis
-                    consequatur officia laborum animi quos. Lorem ipsum dolor
-                    sit amet consectetur adipisicing elit. Architecto aspernatur
-                    nihil animi esse quas, a dolorem sunt quibusdam! Harum
-                    quisquam perferendis natus quo cumque excepturi accusamus
-                    similique deserunt. Voluptate, maiores!
-                  </p>
+                  <p data-translate="declaracion_2_parrafo"></p>
                 </div>
               </div>
 
               <div class="declaracion_img">
-                <img src="" alt="Piloto 1" />
-                <a href="#">Ver perfil</a>
+                <img
+                  src="assets/img/declaracion2.jpg"
+                  alt="Imagen declaración 2"
+                />
+                <a href="#" data-translate="boton_perfil"></a>
               </div>
             </div>
           </div>
@@ -202,13 +198,13 @@
           <div class="clasificacion__cabecera">
             <i class="fa-solid fa-trophy"></i>
             <div class="clasificacion__cabecera__texto">
-              <h2>Clasificación</h2>
-              <span>Nombre de la regata</span>
+              <h2 data-translate="titulo_clasificacion"></h2>
+              <span data-translate="nombre_regata"></span>
             </div>
           </div>
 
           <div class="clasificacion__cuerpo">
-            <h3>Femenino</h3>
+            <h3 data-translate="titulo_clasificacion_1">Femenino</h3>
             <table>
               <tbody>
                 <tr class="arriba">
@@ -255,7 +251,7 @@
               </tbody>
             </table>
 
-            <h3>Masculino</h3>
+            <h3 data-translate="titulo_clasificacion_2"></h3>
             <table>
               <tbody>
                 <tr class="arriba">
@@ -304,51 +300,60 @@
           </div>
 
           <div class="clasificacion__boton">
-            <a href="#">Ver clasificación</a>
+            <a href="#" data-translate="boton_clasificacion"></a>
           </div>
         </article>
       </div>
 
       <!-- rrss -->
       <div class="rrss">
-        <a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#" title="Facebook">
+        <a
+          href="https://www.instagram.com/donostiarragara/"
+          title="Instagram"
+          target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a
+          href="https://www.facebook.com/donostiarragara"
+          title="Facebook"
+          target="_blank"
+        >
           <i class="fa-brands fa-facebook-f"></i
         ></a>
-        <a href="#" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
-        <a href="#" title="TikTok"><i class="fa-brands fa-youtube"></i></a>
+        <a
+          href="https://twitter.com/donostiarragara"
+          title="Twitter"
+          target="_blank"
+          ><i class="fa-brands fa-twitter"></i
+        ></a>
+        <a
+          href="https://www.youtube.com/channel/UCiWDkg3Lnu1tPDdCmzH7p6g"
+          title="TikTok"
+          target="_blank"
+          ><i class="fa-brands fa-youtube"></i
+        ></a>
       </div>
 
       <!-- footer -->
       <footer class="footer">
-        <table>
-          <thead>
-            <tr>
-              <th>Lorem ipsum dolor</th>
-              <th>Lorem ipsum dolor</th>
-            </tr>
-          </thead>
+        <div class="footer_contenido">
+          <p class="contacto">
+            <a href="https://donostiarra.eus/" target="_blank"
+              >Donostiarra.eus</a
+            ><br />
+            <a href="mailto:marketing@donostiarra.eus" target="_blank"
+              >marketing@donostiarra.eus</a
+            >
+            <br />
+            San Sebastián, Guipuzcoa 20006<br />
+            España
+          </p>
 
-          <tbody>
-            <tr>
-              <td>Lorem, ipsum dolor.</td>
-              <td>Lorem, ipsum dolor.</td>
-            </tr>
-
-            <tr>
-              <td>+11 111111111</td>
-              <td>+11 111111111</td>
-            </tr>
-
-            <tr>
-              <td>Lorem@ipsum.dolor</td>
-              <td>Lorem@ipsum.dolor</td>
-            </tr>
-          </tbody>
-        </table>
+          <p class="copy" data-translate="copy"></p>
+        </div>
 
         <div class="baja">
-          <a href="#">Darse de baja</a>
+          <a href="#" data-translate="baja"></a>
         </div>
       </footer>
     </main>

@@ -168,12 +168,13 @@ html {
   z-index: 1;
   font-style: italic;
 }
+
 .album img {
   display: none;
   max-height: 100%;
   object-fit: cover;
   transition: all 0.2s ease;
-  filter: brightness(0.2);
+  filter: brightness(0.35);
 }
 
 .album img:first-of-type {
@@ -377,6 +378,7 @@ button i {
   display: flex;
   justify-content: space-between;
   gap: 4rem;
+  margin-bottom: 1rem;
 }
 
 .segunda_declaracion {
@@ -410,15 +412,11 @@ button i {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  gap: 1rem;
 }
 
 .declaracion_img img {
-  width: 100%;
-}
-
-.declaracion_img a {
-  font-weight: bold;
-  text-decoration: none;
+  width: 80%;
 }
 
 .declaracion_img a:hover {
@@ -541,14 +539,18 @@ button i {
   background-color: white;
 }
 
-.footer table {
-  margin: 0 auto;
-  border-spacing: 50px 0px;
+.footer_contenido {
+  text-align: center;
   padding: 2rem;
 }
 
-.footer table th {
-  padding: 10px 0;
+.contacto {
+  margin-bottom: 2rem;
+}
+
+.contacto a:hover {
+  color: var(--principal);
+  transition: all 0.2s ease;
 }
 
 .baja {
@@ -607,12 +609,13 @@ button i {
 
   .galeria__cuerpo {
     flex-direction: column;
+    max-height: 70vh;
   }
 
   .album span {
     font-size: 2rem;
-    top: .5rem;
-    left: .5rem;
+    top: 0.5rem;
+    left: 0.5rem;
   }
 
   .cerrar {
@@ -650,5 +653,11 @@ button i {
   .footer table {
     border-spacing: 10px 0px;
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 770px) and (min-width: 540px) {
+  .declaracion_img img {
+    width: 40%;
   }
 }

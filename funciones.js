@@ -9,7 +9,7 @@ const img_activa = document.querySelector(".img-activa")
 const contador_indice = document.querySelector(".indice-imagen")
 const contador_total = document.querySelector(".total")
 
-let indice_img = 0
+let indice_img
 let id_album
 
 // abrir galeria en pantalla completa
@@ -46,10 +46,11 @@ cerrar.addEventListener("click", cierraCompleta)
 // adelantar imagen
 function adelantar() {
     if(id_album == 0) {
-        if(indice_img === imagenes_uno.length) {
+        console.log(imagenes_uno.length)
+        if(indice_img == imagenes_uno.length) {
             indice_img = 0
         }
-    
+
         img_activa.src = imagenes_uno[indice_img].src
         indice_img++
         contador_indice.innerHTML = indice_img
@@ -71,21 +72,29 @@ derecha.addEventListener("click", adelantar)
 // atrasar imagen
 function atrasar() {
     if(id_album == 0) {
-        if(indice_img === 0) {
+        console.log(indice_img)
+        if(indice_img == 0) {
             indice_img = imagenes_uno.length
+            img_activa.src = imagenes_uno[indice_img - 1].src
+            indice_img--
+            contador_indice.innerHTML = indice_img + 1
+        }else {
+            img_activa.src = imagenes_uno[indice_img - 1].src
+            indice_img--
+            contador_indice.innerHTML = indice_img + 1
         }
-    
-        img_activa.src = imagenes_uno[indice_img - 1].src
-        indice_img--
-        contador_indice.innerHTML = indice_img + 1
+     
     }else if(id_album == 1) {
-        if(indice_img === 0) {
+        if(indice_img == 0) {
             indice_img = imagenes_dos.length
+            img_activa.src = imagenes_uno[indice_img - 1].src
+            indice_img--
+            contador_indice.innerHTML = indice_img + 1
+        }else {
+            img_activa.src = imagenes_dos[indice_img - 1].src
+            indice_img--
+            contador_indice.innerHTML = indice_img + 1
         }
-    
-        img_activa.src = imagenes_dos[indice_img - 1].src
-        indice_img--
-        contador_indice.innerHTML = indice_img + 1
     }
 
 
